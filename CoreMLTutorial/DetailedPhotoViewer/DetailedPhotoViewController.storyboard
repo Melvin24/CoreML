@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JqA-PR-Qfk">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Detailed Photo View Controller-->
+        <scene sceneID="M8e-8L-tpp">
+            <objects>
+                <viewController id="JqA-PR-Qfk" customClass="DetailedPhotoViewController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HLi-9t-f9U">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="I0x-wJ-ycd">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oBW-pt-RFL">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="323.5"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Brj-hy-F47">
+                                        <rect key="frame" x="0.0" y="323.5" width="375" height="323.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fL5-D3-Lc1">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="162"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confidence: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q5t-wI-W9k">
+                                                <rect key="frame" x="0.0" y="162" width="375" height="161.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Brj-hy-F47" firstAttribute="height" secondItem="I0x-wJ-ycd" secondAttribute="height" multiplier="0.5" id="HWk-6J-Dqi"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="I0x-wJ-ycd" firstAttribute="leading" secondItem="jp6-nc-UVb" secondAttribute="leading" id="Dro-ua-bET"/>
+                            <constraint firstItem="jp6-nc-UVb" firstAttribute="bottom" secondItem="I0x-wJ-ycd" secondAttribute="bottom" id="n5Z-Nr-DTh"/>
+                            <constraint firstItem="jp6-nc-UVb" firstAttribute="trailing" secondItem="I0x-wJ-ycd" secondAttribute="trailing" id="teY-Xm-FfO"/>
+                            <constraint firstItem="I0x-wJ-ycd" firstAttribute="top" secondItem="jp6-nc-UVb" secondAttribute="top" id="yyx-uZ-kFD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jp6-nc-UVb"/>
+                    </view>
+                    <connections>
+                        <outlet property="classificationLabel" destination="fL5-D3-Lc1" id="Bd0-CV-qrm"/>
+                        <outlet property="confidenceLabel" destination="q5t-wI-W9k" id="3eJ-ya-ej0"/>
+                        <outlet property="imageView" destination="oBW-pt-RFL" id="W8s-xl-8UH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YRJ-Up-HRQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="158" y="213"/>
+        </scene>
+    </scenes>
+</document>
