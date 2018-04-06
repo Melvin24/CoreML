@@ -19,6 +19,9 @@
 		E15FAEF7207799F5005F15D1 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15FAEF6207799F5005F15D1 /* PhotoCell.swift */; };
 		E15FAEFD20779B19005F15D1 /* CoreML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E15FAEFC20779B19005F15D1 /* CoreML.framework */; };
 		E15FAEFF20779B8B005F15D1 /* MobileNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = E15FAEFE20779B8B005F15D1 /* MobileNet.mlmodel */; };
+		E15FAF012077B8C8005F15D1 /* ViewController+UICollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15FAF002077B8C8005F15D1 /* ViewController+UICollectionViewDataSource.swift */; };
+		E15FAF032077B8EC005F15D1 /* ViewController+UICollectionViewDelegateFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15FAF022077B8EC005F15D1 /* ViewController+UICollectionViewDelegateFlowLayout.swift */; };
+		E15FAF052077B912005F15D1 /* ViewController+UICollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15FAF042077B912005F15D1 /* ViewController+UICollectionViewDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,9 @@
 		E15FAEF6207799F5005F15D1 /* PhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 		E15FAEFC20779B19005F15D1 /* CoreML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreML.framework; path = System/Library/Frameworks/CoreML.framework; sourceTree = SDKROOT; };
 		E15FAEFE20779B8B005F15D1 /* MobileNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNet.mlmodel; sourceTree = "<group>"; };
+		E15FAF002077B8C8005F15D1 /* ViewController+UICollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+UICollectionViewDataSource.swift"; sourceTree = "<group>"; };
+		E15FAF022077B8EC005F15D1 /* ViewController+UICollectionViewDelegateFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+UICollectionViewDelegateFlowLayout.swift"; sourceTree = "<group>"; };
+		E15FAF042077B912005F15D1 /* ViewController+UICollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+UICollectionViewDelegate.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +94,9 @@
 				E15FAEE820779966005F15D1 /* Main.storyboard */,
 				E15FAEF6207799F5005F15D1 /* PhotoCell.swift */,
 				E15FAEE920779966005F15D1 /* ViewController.swift */,
+				E15FAF002077B8C8005F15D1 /* ViewController+UICollectionViewDataSource.swift */,
+				E15FAF022077B8EC005F15D1 /* ViewController+UICollectionViewDelegateFlowLayout.swift */,
+				E15FAF042077B912005F15D1 /* ViewController+UICollectionViewDelegate.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -203,9 +212,12 @@
 				E15FAEF52077997C005F15D1 /* LayoutHelper.swift in Sources */,
 				E15FAEF120779966005F15D1 /* UIImage+CVPixelBuffer.swift in Sources */,
 				E15FAECA207787FD005F15D1 /* AppDelegate.swift in Sources */,
+				E15FAF012077B8C8005F15D1 /* ViewController+UICollectionViewDataSource.swift in Sources */,
 				E15FAEFF20779B8B005F15D1 /* MobileNet.mlmodel in Sources */,
 				E15FAEF7207799F5005F15D1 /* PhotoCell.swift in Sources */,
 				E15FAEF320779966005F15D1 /* DetailedPhotoViewController.swift in Sources */,
+				E15FAF052077B912005F15D1 /* ViewController+UICollectionViewDelegate.swift in Sources */,
+				E15FAF032077B8EC005F15D1 /* ViewController+UICollectionViewDelegateFlowLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
